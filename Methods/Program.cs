@@ -15,9 +15,9 @@
             //var result2 = Add3(out number1,number2);
             //Console.WriteLine(result2);
             //Console.WriteLine(number1);
-
+            Console.WriteLine(Multiply(2, 4));
             Console.WriteLine(Multiply(2, 4, 5));
-
+            Console.WriteLine(Add4(1,2,3,4,5,6));
             Console.ReadLine();
 
 
@@ -57,7 +57,13 @@ static void Add()
 
 
         }
+        static int Add4(int number, params int[] numbers)
 
+        {
+            return numbers.Sum();
+
+
+        }
 
 
     }
