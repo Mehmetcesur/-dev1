@@ -1,0 +1,28 @@
+﻿using System.Linq.Expressions;
+
+namespace Arrays
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] students = new string[3] { "Engin", "Derin", "Salih" };
+            
+
+            string[] students2 ={"Engin","Derin","Salih"};
+       
+            foreach (var student in students2) 
+            
+            {
+               Console.WriteLine(student);
+
+            }
+
+            Console.WriteLine();
+            Console.ReadLine();           
+
+
+
+        }
+    }
+}
