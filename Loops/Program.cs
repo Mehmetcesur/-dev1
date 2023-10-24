@@ -5,13 +5,27 @@
         static void Main(string[] args)
         {
             //ForLoop();
-            int number = 100;
-            while (number>=0)
+            //WhileLoop();
+            int number = 10;
+            do
             {
-                Console.WriteLine(number); 
+                Console.WriteLine(number);
+                number--;
+            } while (number>=11);
+            Console.ReadLine(); 
+
+
+        }
+
+        private static void WhileLoop()
+        {
+            int number = 100;
+            while (number >= 0)
+            {
+                Console.WriteLine(number);
                 number--;
             }
-            Console.WriteLine("Now number is{0}",number);
+            Console.WriteLine("Now number is{0}", number);
             Console.ReadLine();
         }
 
