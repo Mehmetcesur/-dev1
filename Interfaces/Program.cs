@@ -4,22 +4,30 @@
     {
         static void Main(string[] args)
         {
+            //InterfacesIntro();
+            
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(new OracleCustomerDal());
+
+
+            Console.ReadLine();
+        }
+
+        private static void InterfacesIntro()
+        {
             PersonManager manager = new PersonManager();
             manager.Add(new Customer { Id = 1, FirstName = "Engin", LastName = "Demiroğ", Address = "Ankara" });
 
             Student student = new Student
             {
                 Id = 1,
-                FirstName="Derin",
-                LastName="Demiroğ",
-                Departmant="Computer Sciences"
+                FirstName = "Derin",
+                LastName = "Demiroğ",
+                Departmant = "Computer Sciences"
             };
 
             manager.Add(student);
-
-            Console.ReadLine();
         }
-        
     }
 
     interface IPerson
