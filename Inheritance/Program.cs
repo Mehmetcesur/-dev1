@@ -6,6 +6,9 @@
         {
             Person[] persons = new Person[3]
             {
+                //Interfaceler Inheritance olmasa da Inheritance mantığıyla kullanılabiliyor.
+                //Bu gibi projerlerde Interface kullanmak daha mantıklı
+               
                 new Customer{FirstName="Engin"},new Student{FirstName="Derin"},new Person{FirstName="Salih"}
 
             };
